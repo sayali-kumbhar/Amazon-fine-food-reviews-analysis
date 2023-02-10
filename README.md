@@ -22,3 +22,13 @@ Summary - brief summary of the review<br>
 Text - text of the review<br>
 Objective:<br>
 Given a review, determine whether the review is positive (Rating of 4 or 5) or negative (rating of 1 or 2).
+## Loading the data
+
+The dataset is available in two forms
+1. .csv file
+2. SQLite Database
+
+In order to load the data, We have used the SQLITE dataset as it easier to query the data and visualise the data efficiently.
+<br> 
+
+Here as we only want to get the global sentiment of the recommendations (positive or negative), we will purposefully ignore all Scores equal to 3. If the score id above 3, then the recommendation wil be set to "positive". Otherwise, it will be set to "negative".
